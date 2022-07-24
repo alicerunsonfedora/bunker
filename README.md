@@ -15,11 +15,16 @@ from source and added externally.
 
 To build Bunker, you will need the following tools:
 - Xcode 12 or later
-- Swift 5.6 or later (bundled with Xcode 13 and/or macOS 12 SDKs)
+- Swift 5.5 or later (bundled with Xcode 13 and/or macOS 12 SDKs)
 
 Clone the repository from GitHub using `git clone` or `gh repo clone`, and then open the project in Xcode
 to build normally. Alternatively, run the `swift build` command inside of the root directory of the 
 repository to build it.
+
+## Found an issue?
+
+If you found an issue with this package and would like to submit a bug report, you can do so over at
+https://youtrack.marquiskurt.net/youtrack/newIssue?project=BNKR.
 
 ## License
 
