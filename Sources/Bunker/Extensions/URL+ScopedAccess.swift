@@ -11,7 +11,7 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
     /// Performs an action in a security scoped resource, starting and stopping access automatically.
     /// - Parameter action: The action to be performed in this context.
     /// - SeeAlso: `URL.startAccessingSecurityScopedResource`
