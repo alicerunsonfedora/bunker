@@ -18,4 +18,15 @@ final class BunkerTests: XCTestCase {
         let outOfLowerBounds = 42.clamp(lower: 50, upper: 100)
         XCTAssertEqual(outOfLowerBounds, 50)
     }
+
+    func testClampingWrapper() throws {
+        @Clamped(upperBound: 10) var zeroToTen = 1
+        XCTAssertTrue((0..<11).contains(zeroToTen))
+
+        zeroToTen = 20
+        XCTAssertEqual(zeroToTen, 10)
+
+        zeroToTen = -69
+        XCTAssertEqual(zeroToTen, 0)
+    }
 }
