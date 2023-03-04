@@ -21,6 +21,6 @@ public extension String {
     /// - Parameter comment: A comment that describes this string. Use this to let translators know the purpose of this string.
     /// - Parameter arguments: The arguments that will be passed into the formatted string.
     func localized(comment: String = "", _ arguments: CVarArg...) -> String {
-        Self.localizedStringWithFormat(self, arguments)
+        Self(format: NSLocalizedString(self, comment: comment), arguments)
     }
 }
